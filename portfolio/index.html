@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/381df3cba5.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+<div id="header">
+    <div class="container">
+        <div><nav>
+            <img src="images/mylg.png"  class="logo"  >
+                <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Educations</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+             </nav> 
+             <div class="header-text">
+                <h2>Hi, I am...</h2>
+                <h1> <span>Swaraj</span> Patil <br>an IT Student</h1>
+            </div>
+    </div>
+</div>
+<!-----------------------------------------------------------------------about-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p><h2>My name is Swaraj Patil, and I am a 17-year-old student currently pursuing Information Technology at K. K. Wagh Polytechnic in Nashik. I have always been passionate about technology and its potential to transform lives. From a young age, I found myself drawn to computers and programming, eager to explore their capabilities. My academic journey in IT has been enriching, allowing me to delve into various aspects of software development, networking, and cybersecurity.</h2></p>
+                    
+                 <div class="tab-titles">
+                 <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                 <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span><h2>HTML</h2></span><h3>Building frontend responsive websites using HTML</h3></li>
+                        <li><span><h2>CSS</h2></span><h3>Designing Using Cascading Style Sheets</h3></li>
+                        <li><span><h2>C lang</h2></span><h3>Error Finding</h3></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span><h2>Currently Studying</h2></span><br></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------------------------------projects------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+        <div>
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <h2>My Portfolio</h2>
+            <p>My own Portfolio created by using HTML and CSS</p>
+            <!----------------------------------------portfolio link-->
+            <a href="#">Visit</a>
+        </div>
+        </div>
+    </div>
+</div>
+<!----------------------------------------------------education-->
+<div id="education">
+    <div class="conatiner">
+        <h1 class="sub-title">Education</h1>   
+        <div class="my-qualification">
+            <div class="ssc">
+                <img src="images/school.jpg">
+                <div class="layer">
+                    <h3>SSC</h3>
+                    <p>Passed from Good Shepard Academy, Chalisgaon </p>
+                    <p>percentage:-89.60</p>
+                    <a href="https://www.facebook.com/p/Good-Shepherd-Academy-Chalisgaon-100089838424452/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="ssc">
+                <img src="images/clg.jpg">
+                <div class="layer">
+                    <h3>Polytechnic</h3>
+                    <p>Currently pursuing Diploma in Information Technology in K.K.Wagh Polytechnic (Nasik)</p>
+                    <a href="https://society.kkwagh.edu.in/Polytechnic_campus.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="ssc">
+                <img src="images/htm.jpg">
+                <div class="layer">
+                    <h3>HTML</h3>
+                    <p>Completed programing Course in HTML</p>
+                    <a href="https://www.w3schools.com/html/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+         <div class="button">
+        <a href="images/Resume.docx" download class="btn">Download Resume</a>
+    </div>
+</div>
+<!----------------------------------------------------Contact-->
+<div id="contact">
+    <div class="container">
+     <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me </h1>
+            <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:swarajpatil0107@gmail.com">Send Mail</span></a></p>
+            <p><i class="fa-solid fa-phone"></i>9529892907</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61555287704066&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/Swaraj_Patil_02/"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/swaraj_rajput919/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/swaraj-patil-0176452ba/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+     </div>
+    </div>
+</div>
+    <div class="copyright">
+    <p>Made with <i class="fa-solid fa-heart"></i> By Swaraj Patil</p>
+    </div>
+</div>
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyaQixOMtTkGxFe0i_cyhgXrvqfsRpkccNg8kNNXrL0HAquj_BWnSvxBWpiDDh1dGiPtQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Messege Sent Successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script
+</body>
+</html>
